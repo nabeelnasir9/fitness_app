@@ -14,7 +14,10 @@ const [bodyPart, setBodyPart] = useState([]);
         setExercises={setExercises}
         setBodyPart={setBodyPart}
         bodyPart={bodyPart}/>
-        <ExercisesGet/>
+        <ExercisesGet
+         setExercises={setExercises}
+         setBodyPart={setBodyPart}
+         exercises={exercises}/>
     </Box>
   )
 }
