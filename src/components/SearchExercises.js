@@ -4,7 +4,7 @@ import { exerciseOptions, fetchData } from "../utils/fetchData";
 import HorizontalScrollBar from "./HorizontalScrollBar";
 
 const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
-  const [search, setSearch] = useState();
+  const [search, setSearch] = useState('');
   const [bodyParts, setBodyParts] = useState([]);
   useEffect(() => {
     const fetchExerciseData = async () => {
