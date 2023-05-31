@@ -6,7 +6,7 @@ import ExercisesGet from '../components/ExercisesGet';
 
 const Home = () => {
   const [exercises, setExercises] = useState([]);
-const [bodyPart, setBodyPart] = useState([]);
+const [bodyPart, setBodyPart] = useState('all');
   return (
     <Box>
         <HeroBanner/>
@@ -16,7 +16,7 @@ const [bodyPart, setBodyPart] = useState([]);
         bodyPart={bodyPart}/>
         <ExercisesGet
          setExercises={setExercises}
-         setBodyPart={setBodyPart}
+         bodyPart={bodyPart}
          exercises={exercises}/>
     </Box>
   )
